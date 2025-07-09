@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .box{
+            height:20px;
+            width:20px;
+            padding:35px;
+            margin:30px;
+            background-color: aqua;
+            text-align: center;
+        }
+        .flex-container{
+            display: flex;
+            background-color: blue;
+            justify-content: center;
+        }
+        .flex-item {
+            border-radius: 8px;
+            background-color: darkorchid;
+            border : 5px solid;
+        }
+        .grid-container {
+            display: grid;
+            background-color: orange;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-columns: 400px 400px 500px; */
+            gap: 50px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+ <div class="box">Flex item-1</div>
+ <div class="box">Flex item-2</div>
+ <div class="box">Flex item-3</div>
+ <div class="box">Flex item-4</div>
+</div>
+
+<div>
+    <div class="grid-container">
+    <div class="box">Grid item-1</div>
+     <div class="box">Grid item-2</div>
+      <div class="box">Grid item-3</div>
+       <div class="box">Grid item-4</div>
+       <div class="box">Grid item-5</div>
+       <div class="box">Grid item-6</div>
+</div>
+</body>
+</html>
